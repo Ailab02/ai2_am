@@ -3,3 +3,11 @@ controllers:
         path: ../src/Controller/
         namespace: App\Controller
     type: attribute
+
+location_index:
+    path: /locations
+    controller: App\Controller\LocationController::index
+
+measurement_index:
+    path: /measurements
+    controller: App\Controller\MeasurementController::index
