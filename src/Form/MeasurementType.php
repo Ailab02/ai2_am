@@ -19,6 +19,10 @@ class MeasurementType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+        ->add('celsius', NumberType::class, [
+            'class' => Location::class,
+            'choice_label' => 'city',
+            'choice_value' => 'id'])
             ->add('date')
             ->add('celsius', NumberType::class, [
                 'constraints' => [
