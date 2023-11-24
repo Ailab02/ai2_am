@@ -19,3 +19,7 @@ app_logout:
 register_user:
     path: /register-user
     controller: App\Controller\RegisterController::index
+
+app_weather:
+    path: /weather/{city}/{countryCode}
+    controller: App\Controller\WeatherController::city
